@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
+    dump(\App\Models\User::first());
     return view('welcome');
 });
